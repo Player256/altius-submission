@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        <div class="tabs">
+            <button id="registerTab" class="active">Register</button>
+            <button id="loginTab">Login</button>
+        </div>
+    </div>
+    <div id="registrationFormContainer">
+    <h1>Registration Form</h1>
+    <form id="registration">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Register</button>
+        <br>
+    </form>
+</div>
+<div id="loginFormContainer" style="display: none;">
+    <h1>Login Form</h1>
+    <form id="loginForm">
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="loginEmail" required>
+        <br>
+        
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+        <br>
+        
+        <button type="submit">Login</button>
+        
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
